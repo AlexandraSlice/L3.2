@@ -1,0 +1,453 @@
+body {
+font-family: "TT Lakes", "Gill Sans", sans-serif;
+}
+
+.container {
+min-width: 320px;
+margin: 0px auto;
+}
+
+.menu {
+display: flex;
+justify-content: space-around;
+flex-wrap: nowrap;
+}
+
+.menu__title{
+display: none;
+}
+
+.nav {
+font-size: 36px;
+}
+
+.menu-img {
+width: 40px;
+height: 40px;
+background-repeat: no-repeat;
+margin: 3%;
+
+}
+
+.back {
+width: 40px;
+height: 40px;
+border-radius: 50%;
+background: #FF3E79;
+
+
+
+}
+
+.back_burger {
+background-image: url("burger.svg");
+background-repeat: no-repeat;
+background-position: 10px 10px;
+
+}
+ 
+.back_telephone {
+background-image: url("telephone.svg");
+display: none;
+background-repeat: no-repeat;
+background-position: 10px 10px;
+}
+
+.back_message {
+background-image: url("message.svg");
+display: none;
+background-repeat: no-repeat;
+background-position: 10px 10px;
+}
+
+.back_search {
+background-image: url("search.svg");
+background-repeat: no-repeat;
+background-position: 10px 10px;
+
+}
+
+.Group {
+background-image: url("Group.svg");
+width: 100px;
+height: 60px;
+margin-right: 6%;
+
+}
+
+.back_contacts {
+background-image: url("contacts.svg");
+display: none;
+background-repeat: no-repeat;
+background-position: 10px 10px;
+}
+
+.back_fix {
+background-image: url("fix.svg");
+background-repeat: no-repeat;
+background-position: 10px 10px;
+} 
+
+.Group::after {
+content: "";
+width: 40px;
+position: absolute;
+height: 1px;
+background-color: grey;
+transform: rotate(90deg) translate(25px, -110px);
+}
+
+.title {
+margin: 6% 3%;
+white-space: nowrap;
+}
+
+.stick {
+width: 4px;
+height: 40px;
+border: 2px solid #41F6D7;
+border-radius: 5px;
+transform: translate(0, 10px);
+background-color: #41F6D7;
+}
+
+.headline {
+display: flex;
+}
+
+.Scroll-box {
+display: flex;
+overflow: scroll;
+white-space: nowrap;
+gap: 5%;
+margin: 6% 3%;
+justify-content: space-between;
+}
+
+.description__text_text {
+margin: 6% 3%;
+}
+
+.description__text_next {
+margin: 6% 3%;
+}
+
+.description__text_symbol {
+color: #41F6D7;
+transform: rotate(-90deg) translate(0, 10px);
+}
+
+.description__text_next_symbol {
+display: flex;
+width: 200px;
+margin-left: 10%;
+}
+
+
+.description__picture_picture {
+width: 100%
+}
+
+.additional-text{
+display: none;
+}
+
+.menu__icons {
+display: flex;
+width: 100%;
+justify-content: space-around;
+}
+
+.menu__icons_left {
+display: flex;
+width: 50%;
+
+justify-content: space-around;
+}
+
+.menu__icons_right {
+display: flex;
+width: 50%;
+justify-content: space-around;
+}
+
+.Scroll-box__Repairable-devices {
+border: solid #B8FFEC;
+border-radius: 5px;
+background-color: white;
+}
+
+.box {
+padding: 5px
+}
+
+main {
+background-color: #F8F8F8;
+}
+
+
+
+@media (min-width: 768px) {
+.container {
+min-width: 768px;
+margin: 0px auto;
+}
+
+.back_burger {
+background-image: url("burger.svg");
+order: 1;
+}
+ 
+.back_telephone {
+background-image: url("telephone.svg");
+display: initial;
+order: 3;
+}
+
+.back_message {
+background-image: url("message.svg");
+display: initial;
+order: 4;
+}
+
+.back_search {
+background-image: url("search.svg");
+order: 7;
+}
+
+.Group {
+background-image: url("Group.svg");
+width: 100px;
+height: 60px;
+order: 2;
+}
+
+.back_contacts {
+background-image: url("contacts.svg");
+display: initial;
+order: 5;
+}
+
+.back_fix {
+background-image: url("fix.svg");
+order: 6;
+} 
+
+.Group::after {
+content: "";
+width: 40px;
+position: absolute;
+height: 1px;
+background-color: grey;
+transform: rotate(90deg) translate(25px, 35px);
+}
+
+.back_contacts::after {
+content: "";
+width: 40px;
+position: absolute;
+height: 1px;
+background-color: grey;
+transform: rotate(90deg) translate(25px, -30px);
+margin-left: 5px;
+margin-right: 5px;
+}
+
+.description {
+display: flex;
+
+}
+
+.description__text {
+align-items: flex-start;
+margin-top: 0;
+flex: 1 1 50%;
+}
+
+.description__picture {
+flex: 1 1 50%;
+}
+
+.description__text_text {
+margin-top: 0;
+}
+
+.menu__icons {
+display: flex;
+width: 100%;
+justify-content: space-between;
+}
+
+.menu__icons_left {
+display: flex;
+width: 50%;
+
+justify-content: flex-start;
+}
+
+.menu__icons_right {
+display: flex;
+width: 50%;
+justify-content: flex-end;
+}
+
+
+}
+
+@media (min-width: 1120px) {
+
+.container {
+max-width: 1120px;
+margin: 0px auto;
+}
+
+.back_burger {
+background-image: url("burger.svg");
+display: none;
+}
+ 
+.back_telephone {
+background-image: url("telephone.svg");
+display: initial;
+display: none;
+}
+
+.back_message {
+background-image: url("message.svg");
+display: initial;
+display: none;
+}
+
+.back_search {
+background-image: url("search.svg");
+display: none;
+}
+
+.Group {
+background-image: url("Group.svg");
+width: 100px;
+height: 60px;
+display: none;
+}
+
+.back_contacts {
+background-image: url("contacts.svg");
+display: initial;
+order: 2;
+width: 40px;
+height: 40px;
+}
+
+.back_contacts::before {
+content: "gggg";
+width: 40px;
+height: 40px
+position: absolute;
+visibility: hidden;
+transform:  translate();
+}
+
+.back_fix::after {
+content: "gggg";
+width: 40px;
+height: 40px
+position: absolute;
+visibility: hidden;
+transform:  translate();
+}
+
+
+.back_fix {
+background-image: url("fix.svg");
+display: initial;
+order: 4;
+} 
+
+.request{
+order: 1;
+flex-wrap: nowrap;
+flex-basis: 150px;
+margin-right: 10px;
+
+
+}
+
+.fix{
+order: 3;
+flex-wrap: nowrap;
+flex-basis: 150px;
+margin-right: 10px;
+
+}
+
+
+
+.additional-text{
+display: flex;
+align-items: center;
+
+}
+
+.menu {
+justify-content: end;
+}
+
+.menu-img {
+flex-basis: content;
+margin-left: 0;
+
+}
+
+
+.menu__title{
+display: initial;
+top: 10px; left: 40px;
+width: 300px;
+font-size: 30px;
+font-weight: bold;
+white-space: nowrap;
+}
+
+.straight {
+width: 4px;
+height: 40px;
+color: #F8F8F8;
+border: 2px solid #41F6D7;
+border-radius: 5px;
+transform: translate(0, 0px);
+background-color: #41F6D7;
+margin-right: 10px;
+}
+
+.titleline {
+display: flex;
+}
+
+.title{
+display: none;
+}
+.stick {
+display: none;
+}
+
+body {
+background-color: #F8F8F8;
+}
+.Scroll-box{
+overflow: visible;
+gap: 5px;
+}
+
+.back_contacts::after{
+display: none;
+}
+
+@media (min-width: 1120px) {
+.container {
+max-width: 1120px;
+margin: 0px auto;
+}
+
+
+
+}
